@@ -1,8 +1,10 @@
 #include<iostream>
 #include<cstring>
 using namespace std;
+void average(float avg);
 
-int main(){
+int main()
+{
     float marks[5], avg = 0; 
     cout << "enter the marks : " << endl;
     for(int i = 0; i < 5; i++){
@@ -10,7 +12,12 @@ int main(){
         avg += marks[i];
     }
     avg = avg/5;
-    
+    average(avg);
+    return 0;
+}
+
+
+void average(float avg){
     if(avg < 50){
         cout << "FAIL"<< endl;
     }
@@ -33,5 +40,5 @@ int main(){
     {
         cout << "A+ grade" << endl;
     }
-    return 0;
+   
 }
