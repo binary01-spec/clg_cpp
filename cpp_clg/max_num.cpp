@@ -1,18 +1,13 @@
 #include<iostream>
 #include<cstring>
 using namespace std;
-int max_num(int x, int y);
 
-int main()
-{
-    int x, y;
-    cout << "Enter first number: ";
-    cin >> x;
-    cout << "Enter second number: ";
-    cin >> y;
-    cout << max_num(x, y) << " is largest";
-}
-
-int max_num(int x, int y){
-    return (x > y) ? x : y;
+int main(){
+    float arr[3] , max_num = -99999999;
+    cin >> "enter the number: "
+    for(int i = 0; i < 3; i++){
+        cin >> arr[i];
+        max_num = max(arr[i], max_num);
+    }
+    cout << max_num << endl;
 }
